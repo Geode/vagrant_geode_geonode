@@ -12,6 +12,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.network "forwarded_port", guest: 80, host: 2780
   config.vm.network "forwarded_port", guest: 8080, host: 2788
   config.vm.synced_folder "setup", "/setup"
+  config.vm.synced_folder "site", "/var/www/geode_geonode/"
   config.vm.provider "virtualbox" do |vb|
     vb.gui = true
   
