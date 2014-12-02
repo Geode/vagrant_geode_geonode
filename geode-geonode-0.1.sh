@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
-echo 'start installing Geode geonode version 0.1 alpha'
+echo 'start installing Geode geonode version alpha-beta'
 apt-get install -y git
+apt-get install -y python-pip
 pip install virtualenvwrapper
 export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python
 export WORKON_HOME=/home/.venvs
